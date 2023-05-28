@@ -1,0 +1,361 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    background-color: rgb(18, 8, 54);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    backdrop-filter: blur(10px);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.sidepane {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 80px;
+    background-color: rgb(0, 13, 40);
+    border-right: 5px solid rgba(70, 70, 70, 0.5);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+
+.homebtncontainer {
+    margin-top: 200%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.adddetailshomebtn {
+    background-color: transparent;
+    border: none;
+}
+
+.adddetailshomebtn i {
+    color: white;
+    font-size: 25px;
+}
+
+.adddetailshomebtn:hover i {
+    color: greenyellow;
+  }
+
+.calendarbtncontainer {
+    margin-top: 100%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.adddetailscalendarbtn {
+    background-color: transparent;
+    border: none;
+}
+
+.adddetailscalendarbtn i {
+    color: white;
+    font-size: 25px;
+}
+
+.adddetailscalendarbtn:hover i {
+    color: greenyellow;
+  }
+
+.addbtncontainer {
+    margin-top: 100%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.adddetailsaddbtn {
+    background-color: transparent;
+    border: none;
+}
+
+.adddetailsaddbtn i {
+    color: greenyellow;
+    font-size: 25px;
+}
+
+.adddetailsaddbtn:hover i {
+    color: greenyellow;
+  }
+
+.starbtncontainer {
+    margin-top: 100%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.adddetailsstarbtn {
+    background-color: transparent;
+    border: none;
+}
+
+.adddetailsstarbtn i {
+    color: white;
+    font-size: 25px;
+}
+
+.adddetailsstarbtn:hover i {
+    color: greenyellow;
+  }
+
+.logoutbtncontainer {
+    margin-top: 100%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.logoutbtn {
+    background-color: transparent;
+    border: none;
+}
+
+.logoutbtn i {
+    color: white;
+    font-size: 25px;
+}
+
+.logoutbtn:hover i {
+    color: orangered;
+  }
+
+.adddetailsmaincontainer {
+    height: 100vh;
+    width: calc(100vw - 80px);
+    display: flex;
+    
+    justify-content: center;
+}
+
+.adddetailsformcontainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(89, 89, 89, 0.5);
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.adddetailstitlecontainer {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.adddetailstitlecontainer i {
+    font-size: 25px;
+    background-color: transparent;
+    padding-right: 10px;
+}
+
+.adddetailstitleinput {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+}
+
+.adddetailstitleinput:focus {
+    outline: none;
+}
+
+.adddetailsdesccontainer {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+
+.adddetailsdesccontainer i {
+    font-size: 25px;
+    background-color: transparent;
+    padding-right: 10px;
+}
+
+.adddetailsdescinput {
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    width: 310px;
+}
+
+.adddetailsdescinput:focus {
+    outline: none;
+}
+
+.adddetailssubtaskcontainer {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 30px;
+    height: 200px;
+}
+
+tbody {
+    display: block;
+    height: 150px;
+    overflow: auto;
+}
+
+tbody::-webkit-scrollbar {
+    display: none;
+}
+
+.adddetailssubtasklabel {
+    font-size: 15px;
+    color: white;
+}
+
+.adddetailssubtasklabelcell {
+    width: 300px;
+    padding: 0;
+    background-color: transparent;
+}
+
+.adddetailssubtaskdltcell {
+    background-color: transparent;
+    padding: 0;
+}
+
+.adddetailssubtasksubmitcell {
+    background-color: transparent;
+    padding: 0;
+    padding-left: 15px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.adddetailssubtaskdlt {
+    background-color: transparent;
+    border: none;
+}
+
+.adddetailssubtaskdlt:hover {
+    color: orangered;
+}
+
+.adddetailssubtaskinputcell {
+    width: 300px;
+    background-color: transparent;
+    padding: 0;
+}
+
+.adddetailssubtaskinput {
+    margin-left: 20px;
+    width: 200px;
+    padding: 5px;
+}
+
+.adddetailssubtaskinput:focus {
+    outline: none;
+}
+
+.adddetailssubtasksubmit {
+    margin-left: 0px;
+    background-color: transparent;
+    border: none;
+}
+
+.adddetailssubtasksubmit:hover {
+    color: greenyellow;
+}
+
+.adddetailsfoot {
+    margin-top: 10px;
+    position: sticky;
+    bottom: 0;
+}
+
+.adddetailsdatetimecontainer {
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.adddetailsdatetimecontainer i {
+    font-size: 25px;
+    background-color: transparent;
+    padding-right: 10px;
+}
+
+.adddetailsdatetimeinput {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+}
+
+.adddetailsdatetimeinput:focus {
+    outline: none;
+}
+
+.adddetailsstarcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adddetailsstarcontainer i {
+    font-size: 30px;
+    color: white;
+    
+}
+
+.adddetailsstarbutton {
+    margin-top: 30px;
+    background-color: transparent;
+    border: none;
+}
+
+.adddetailsstarbutton:hover i {
+    color: yellow;
+}
+
+.adddetailssubmitbtncontainer {
+    padding: 0;
+}
+
+.adddetailssubmitbtn {
+    margin-top: 10px;
+    font-size: 50px;
+    background-color: transparent;
+    border: none;
+}
+
+.adddetailssubmitbtn:hover i {
+    text-shadow:
+    0 0 3px #fff,
+    0 0 5px #fff,
+    0 0 5px #fff,
+    0 0 5px rgb(0, 0, 0),
+    0 0 5px rgb(0, 0, 0),
+    0 0 5px rgb(0, 0, 0),
+    0 0 5px rgb(0, 0, 0),
+    0 0 5px rgb(0, 0, 0);
+}
+
+.adddetailserrcontainer {
+    color: red;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

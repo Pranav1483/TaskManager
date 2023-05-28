@@ -1,0 +1,380 @@
+.react-calendar {
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgb(48, 48, 48);
+    border: none;
+}
+
+.react-calendar__navigation {
+    background-color: rgb(72, 72, 72);
+    
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.react-calendar__navigation button {
+    color: #ffffff;
+    font-size: 16px;
+    padding: 6px 12px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    background-color: rgb(48, 48, 48);
+}
+
+.react-calendar__navigation__prev2-button {
+    border-top-left-radius: 20px;
+}
+
+.react-calendar__navigation__next2-button {
+    border-top-right-radius: 20px;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.react-calendar__navigation button[disabled] {
+    color: transparent;
+    cursor: default;
+}
+
+.react-calendar__month-view__weekdays {
+    background-color: transparent;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.react-calendar__month-view__weekdays__weekday abbr {
+    text-decoration: none;
+    color: grey;
+}
+
+.react-calendar .sunday {
+    color: red;
+}
+
+.react-calendar__month-view__days__day--weekend {
+    color: rgb(110, 102, 102);
+}
+
+.react-calendar__month-view__days__day--weekend:enabled:focus {
+    color: rgb(255, 255, 255);
+}
+
+.react-calendar__tile {
+    height: 42px;
+    width: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.react-calendar__tile--active {
+    background-color: #999;
+    border-radius: 50%;
+
+}
+
+.react-calendar__tile:enabled:hover {
+    background-color: #999;
+    border-radius: 50%;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+    background-color: #999;
+    border-radius: 50%;
+}
+
+.react-calendar__tile--now {
+    background-color: rgb(72, 72, 72);
+    border-radius: 50%;
+}
+
+.current-date {
+    border: 1px solid white;
+}
+
+.date-dot {
+    width: 4px;
+    height: 4px;
+    background-color: rgb(0, 204, 255);
+    border-radius: 50%;
+    margin: auto;
+    position: absolute;
+    bottom: 5px;
+}
+
+.react-calendar__month-view__days__day {
+    color: white;
+    font-weight: 400;
+}
+
+.react-calendar__month-view__days__day--today {
+    border: 1px solid white;
+}
+
+.react-calendar__viewContainer {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    background-color: rgb(18, 8, 54);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    backdrop-filter: blur(10px);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.sidepane {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 80px;
+    background-color: rgb(0, 13, 40);
+    border-right: 5px solid rgba(70, 70, 70, 0.5);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+
+.homebtncontainer {
+    margin-top: 200%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.calendarhomebtn {
+    background-color: transparent;
+    border: none;
+}
+
+.calendarhomebtn i {
+    color: white;
+    font-size: 25px;
+}
+
+.calendarhomebtn:hover i {
+    color: greenyellow;
+  }
+
+.calendarbtncontainer {
+    margin-top: 100%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.calendarcalendarbtn {
+    background-color: transparent;
+    border: none;
+}
+
+.calendarcalendarbtn i {
+    color: greenyellow;
+    font-size: 25px;
+}
+
+.calendarcalendarbtn:hover i {
+    color: greenyellow;
+  }
+
+.addbtncontainer {
+    margin-top: 100%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.calendaraddbtn {
+    background-color: transparent;
+    border: none;
+}
+
+.calendaraddbtn i {
+    color: white;
+    font-size: 25px;
+}
+
+.calendaraddbtn:hover i {
+    color: greenyellow;
+  }
+
+.starbtncontainer {
+    margin-top: 100%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.calendarstarbtn {
+    background-color: transparent;
+    border: none;
+}
+
+.calendarstarbtn i {
+    color: white;
+    font-size: 25px;
+}
+
+.calendarstarbtn:hover i {
+    color: greenyellow;
+  }
+
+.logoutbtncontainer {
+    margin-top: 100%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.logoutbtn {
+    background-color: transparent;
+    border: none;
+}
+
+.logoutbtn i {
+    color: white;
+    font-size: 25px;
+}
+
+.logoutbtn:hover i {
+    color: orangered;
+  }
+
+.calendarcontainer {
+    position: absolute;
+    padding: 0;
+    top: 50px;
+    left: 520px;
+    width: 500px;
+    background-color: transparent;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clear-filter-btn {
+    margin-top: 10px;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+}
+
+.clear-filter-btn i {
+    font-size: 30px;
+    color: white;
+}
+
+.clear-filter-btn:hover i {
+    color: rgb(0, 170, 255);
+}
+
+.tablecontainer {
+    position: absolute;
+    top: 450px;
+    left: 190px;
+    font-size: 15px;
+    height: 250px;
+    overflow: auto;
+}
+
+.tablecontainer::-webkit-scrollbar {
+    display: none;
+}
+
+.tasktable {
+    border-collapse: separate;
+    border-spacing: 0;
+    display: block;
+}
+
+tr {
+    background-color: transparent;
+    padding: 10px;
+    display: block;
+    border-radius: 20px;
+}
+
+td {
+    background-color: rgba(89, 89, 89, 0.5);
+    
+    padding-left: 20px;
+    text-align: left;
+    color: white;
+    font-family: sans-serif;
+}
+
+.taskcell {
+    width: 520px;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.datecell {
+    padding: 20px;
+    width: 200px;
+}
+
+.timecell {
+    padding: 20px;
+    width: 175px;
+}
+
+.statuscell {
+    width: 150px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+
+.completedcontainer {
+    background-color: rgb(0, 255, 47, 0.4);
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.completedcontainer:hover {
+    background-color: rgb(0, 255, 21, 0.5);
+}
+
+.notcompletedcontainer {
+    background-color: rgb(97, 0, 194);
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.notcompletedcontainer:hover {
+    background-color: rgb(112, 0, 224);
+}

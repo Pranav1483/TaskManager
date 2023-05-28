@@ -1,0 +1,171 @@
+html {
+    height: 100%;
+    width: 100vw;
+}
+
+body {
+    display: flex;
+    background-color: rgb(18, 8, 54);
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+    margin: 0;
+    padding-bottom: 0;
+    height: 100%;
+}
+
+.box1 {
+    display: flex;
+    margin: auto;
+    width: 270px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    mix-blend-mode: normal;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 5px solid rgba(70, 70, 70, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.title1 {
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 60px;
+    line-height: 75px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    text-shadow:
+    0 0 3px #fff,
+    0 0 5px #fff,
+    0 0 5px #fff,
+    0 0 5px rgb(255, 0, 251),
+    0 0 5px rgb(255, 0, 251),
+    0 0 5px rgb(255, 0, 251),
+    0 0 5px rgb(255, 0, 251),
+    0 0 5px rgb(255, 0, 251);
+}
+
+.title2 {
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #000000;
+    mix-blend-mode: normal;
+}
+
+.box2 {
+    display: flex;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 3.82658px 3.82658px rgba(0, 0, 0, 0.25);
+}
+
+.box2 i{
+    padding: 10px;
+}
+
+.textbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 19.13px;
+    width: 220px;
+    height: 20px;
+    background: #FFFFFF;
+    mix-blend-mode: normal; 
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.textbox::placeholder {
+    color: #d4d4d4;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.textbox:focus {
+    outline: none;
+}
+
+.forgotpwd {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    color: #b0b0b0;
+    padding-top: 10px;
+    padding-left: 180px;
+}
+
+
+
+.button1 {
+    background-image: linear-gradient(to right, #1A2980 0%, #8b1eff  51%, #1A2980  100%);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 40px;
+    display: block;
+    width: 100px;
+    height: 40px;
+    font-weight: 500;
+}
+
+.button1:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: black;
+}
+
+.button2 {
+    background-image: linear-gradient(to right, #1A2980 0%, #8b1eff  51%, #1A2980  100%);
+    margin-top: 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 40px;
+    display: block;
+    width: 100px;
+    height: 40px;
+    font-weight: 500;
+}
+
+.button2:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: black;
+}
+
+.errordiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.error {
+    color: red;
+    font-size: 20;
+}

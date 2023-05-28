@@ -1,0 +1,242 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    background-color: rgb(18, 8, 54);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    backdrop-filter: blur(10px);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.sidepane {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 80px;
+    background-color: rgb(0, 13, 40);
+    border-right: 5px solid rgba(70, 70, 70, 0.5);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+
+.homebtncontainer {
+    margin-top: 200%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.starhomebtn {
+    background-color: transparent;
+    border: none;
+}
+
+.starhomebtn i {
+    color: white;
+    font-size: 25px;
+}
+
+.starhomebtn:hover i {
+    color: greenyellow;
+  }
+
+.calendarbtncontainer {
+    margin-top: 100%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.starcalendarbtn {
+    background-color: transparent;
+    border: none;
+}
+
+.starcalendarbtn i {
+    color: white;
+    font-size: 25px;
+}
+
+.starcalendarbtn:hover i {
+    color: greenyellow;
+  }
+
+.addbtncontainer {
+    margin-top: 100%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.staraddbtn {
+    background-color: transparent;
+    border: none;
+}
+
+.staraddbtn i {
+    color: white;
+    font-size: 25px;
+}
+
+.staraddbtn:hover i {
+    color: greenyellow;
+  }
+
+.starbtncontainer {
+    margin-top: 100%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.starstarbtn {
+    background-color: transparent;
+    border: none;
+}
+
+.starstarbtn i {
+    color: greenyellow;
+    font-size: 25px;
+}
+
+.starstarbtn:hover i {
+    color: greenyellow;
+  }
+
+.logoutbtncontainer {
+    margin-top: 100%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.logoutbtn {
+    background-color: transparent;
+    border: none;
+}
+
+.logoutbtn i {
+    color: white;
+    font-size: 25px;
+}
+
+.logoutbtn:hover i {
+    color: orangered;
+  }
+
+.startablecontainer {
+    position: absolute;
+    top: 100px;
+    left: 190px;
+    font-size: 15px;
+    height: 500px;
+    overflow: auto;
+}
+
+.startablecontainer::-webkit-scrollbar {
+    display: none;
+}
+
+.startasktable {
+    border-collapse: separate;
+    border-spacing: 0;
+    display: block;
+}
+
+tr {
+    background-color: transparent;
+    padding: 10px;
+    display: block;
+    border-radius: 20px;
+}
+
+td {
+    background-color: rgba(89, 89, 89, 0.5);
+    
+    padding-left: 20px;
+    text-align: left;
+    color: white;
+    font-family: sans-serif;
+}
+
+.taskcell {
+    width: 520px;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.datecell {
+    padding: 20px;
+    width: 200px;
+}
+
+.timecell {
+    padding: 20px;
+    width: 175px;
+}
+
+.statuscell {
+    width: 150px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+
+.completedcontainer {
+    background-color: rgb(0, 255, 47, 0.4);
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.completedcontainer:hover {
+    background-color: rgb(0, 255, 21, 0.5);
+}
+
+.notcompletedcontainer {
+    background-color: rgb(97, 0, 194);
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.notcompletedcontainer:hover {
+    background-color: rgb(112, 0, 224);
+}
+
+.screen-loader-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen-loader {
+    position: relative;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+  }

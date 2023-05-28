@@ -1,0 +1,431 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    background-color: rgb(18, 8, 54);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    backdrop-filter: blur(10px);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.sidepane {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 80px;
+    background-color: rgb(0, 13, 40);
+    border-right: 5px solid rgba(70, 70, 70, 0.5);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+
+.homebtncontainer {
+    margin-top: 200%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.detailshomebtn {
+    background-color: transparent;
+    border: none;
+}
+
+.detailshomebtn i {
+    color: white;
+    font-size: 25px;
+}
+
+.detailshomebtn:hover i {
+    color: greenyellow;
+  }
+
+.calendarbtncontainer {
+    margin-top: 100%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.detailscalendarbtn {
+    background-color: transparent;
+    border: none;
+}
+
+.detailscalendarbtn i {
+    color: white;
+    font-size: 25px;
+}
+
+.detailscalendarbtn:hover i {
+    color: greenyellow;
+  }
+
+.addbtncontainer {
+    margin-top: 100%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.detailsaddbtn {
+    background-color: transparent;
+    border: none;
+}
+
+.detailsaddbtn i {
+    color: white;
+    font-size: 25px;
+}
+
+.detailsaddbtn:hover i {
+    color: greenyellow;
+  }
+
+.starbtncontainer {
+    margin-top: 100%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.detailsstarbtn {
+    background-color: transparent;
+    border: none;
+}
+
+.detailsstarbtn i {
+    color: white;
+    font-size: 25px;
+}
+
+.detailsstarbtn:hover i {
+    color: greenyellow;
+  }
+
+.logoutbtncontainer {
+    margin-top: 100%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.logoutbtn {
+    background-color: transparent;
+    border: none;
+}
+
+.logoutbtn i {
+    color: white;
+    font-size: 25px;
+}
+
+.logoutbtn:hover i {
+    color: orangered;
+  }
+
+.mainpane {
+    display: flex;
+    height: 100vh;
+    width: calc(100vw - 30%);
+    align-items: center;
+    justify-content: right;
+}
+
+.detailspane {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.titlecontainer {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.titlecontainer i {
+    font-size: 25px;
+    background-color: transparent;
+    padding-right: 10px;
+}
+
+.titlelabel {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    width: 339.27px;
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+}
+
+
+.desccontainer {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+
+.desccontainer i {
+    font-size: 25px;
+    background-color: transparent;
+    padding-right: 10px;
+}
+
+.desclabel {
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    width: 340px;
+    height: 50px;
+    word-wrap: break-word;
+    overflow-y: scroll;
+}
+
+.desclabel::-webkit-scrollbar {
+    display: none;
+}
+
+.subtaskcontainer {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+    height: 200px;
+}
+
+tbody {
+    display: block;
+    height: 200px;
+    overflow: auto;
+}
+
+tbody::-webkit-scrollbar {
+    display: none;
+}
+
+.subtasklabel {
+    font-size: 15px;
+    color: white;
+}
+
+.subtasklabelcell {
+    background-color: transparent;
+    width: 300px;
+}
+
+.detailsrow {
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.detailsul {
+    padding-left: 10px;
+    height: 10px;
+}
+
+.subtaskdonecell {
+    background-color: transparent;
+}
+
+.subtaskdone {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.subtaskdone:hover i {
+    color: greenyellow;
+}
+
+.datetimecontainer {
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.datetimecontainer i {
+    font-size: 25px;
+    background-color: transparent;
+    padding-right: 10px;
+}
+
+.datetimelabel {
+    background-color: transparent;
+    border: none;
+    margin-left: 0px;
+    font-size: 25px;
+    width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.starcontainer i {
+    font-size: 30px;
+    color: white;
+}
+
+.starbutton {
+    margin-top: 30px;
+    background-color: transparent;
+    border: none;
+}
+
+.starbutton:hover i {
+    color: yellow;
+}
+
+.barscontainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.timercontainer {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.timercontainer * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.progresscontainer {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.progresscontainer * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.progressdata {
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.skill {
+    position: relative;
+    width: 260px;
+    height: 260px;
+}
+
+.outer {
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    padding: 30px;
+    box-shadow: -2px -2px 4px 2px rgba(0, 0, 0, 0.3);
+    background-color: rgba(89, 89, 89, 0.5);
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgb(18, 8, 54);
+}
+
+.bardata {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.timer-circle {
+    fill: none;
+    stroke: url(#GradientColor1);
+    stroke-width: 30px;
+    stroke-dasharray: 720;
+    stroke-dashoffset: 720;
+    animation: anim 2s ease-out forwards;
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+
+.progress-circle {
+    fill: none;
+    stroke: url(#GradientColor2);
+    stroke-width: 30px;
+    stroke-dasharray: 720;
+    stroke-dashoffset: 720;
+    animation: anim 2s ease-out forwards;
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+
+@keyframes anim {
+    100% {
+        stroke-dashoffset: 100;
+    }
+}
+
+.bar-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bar-container svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.trashcontainer {
+    height: 100vh;
+    width: 160px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.trashbtn {
+    margin-left: 100px;
+    background-color: transparent;
+    border: none;
+}
+
+.trashbtn i {
+    font-size: 50px;
+    color: white;
+}
+
+.trashbtn:hover i {
+    color: orangered;
+}

@@ -1,0 +1,419 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    background-color: rgb(18, 8, 54);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    backdrop-filter: blur(10px);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.sidepane {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 80px;
+    background-color: rgb(0, 13, 40);
+    border-right: 5px solid rgba(70, 70, 70, 0.5);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+
+.homebtncontainer {
+    margin-top: 200%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.homehomebtn {
+    background-color: transparent;
+    border: none;
+}
+
+.homehomebtn i {
+    color: greenyellow;
+    font-size: 25px;
+}
+
+.homehomebtn:hover i {
+    color: greenyellow;
+  }
+
+.calendarbtncontainer {
+    margin-top: 100%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.homecalendarbtn {
+    background-color: transparent;
+    border: none;
+}
+
+.homecalendarbtn i {
+    color: white;
+    font-size: 25px;
+}
+
+.homecalendarbtn:hover i {
+    color: greenyellow;
+  }
+
+.addbtncontainer {
+    margin-top: 100%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.homeaddbtn {
+    background-color: transparent;
+    border: none;
+}
+
+.homeaddbtn i {
+    color: white;
+    font-size: 25px;
+}
+
+.homeaddbtn:hover i {
+    color: greenyellow;
+  }
+
+.starbtncontainer {
+    margin-top: 100%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.homestarbtn {
+    background-color: transparent;
+    border: none;
+}
+
+.homestarbtn i {
+    color: white;
+    font-size: 25px;
+}
+
+.homestarbtn:hover i {
+    color: greenyellow;
+  }
+
+.logoutbtncontainer {
+    margin-top: 100%;
+    background-color: rgb(0, 13, 40);
+    top: 30px;
+}
+
+.logoutbtn {
+    background-color: transparent;
+    border: none;
+}
+
+.logoutbtn i {
+    color: white;
+    font-size: 25px;
+}
+
+.logoutbtn:hover i {
+    color: orangered;
+  }
+
+.searchbarcontainer {
+    position: absolute;
+    display: flex;
+    top: 20px;
+    right: 140px;
+    background-color: rgb(0, 13, 40);
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 20px;
+}
+
+.searchbarcontainer i {
+    font-size: 20px;
+    color: white;
+    padding-right: 10px;
+}
+
+.searchtextbox {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 15px;
+    width: 250px;
+}
+
+.searchtextbox:focus {
+    outline: none;
+}
+
+.searchbtn {
+    background-color: transparent;
+    border: none;
+}
+
+.searchbtn:hover i {
+    color: cyan;
+}
+
+.userboardcontainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    top: 100px;
+    left: 200px;
+    background-color: rgba(89, 89, 89, 0.5);
+    padding: 30px;
+    border-radius: 20px;
+    width: 400px;
+}
+
+.usricn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: grey;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.usricn i {
+    font-size: 70px;
+}
+
+.usrdetails {
+    padding-top: 20px;
+    line-height: 2;
+    margin-top: 20px;
+    border-top: 2px solid rgba(70, 70, 70, 0.5);
+    display: flex;
+}
+
+.fullname {
+    position: absolute;
+    margin-top: 70px;
+    left: 220px;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.progress {
+    position: relative;
+    display: flex;
+    left: 50px;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 25px;
+    
+}
+
+.progress i {
+    font-size: 20px;
+    padding: 5px;
+    padding-left: 15px;
+    
+}
+
+.progress label {
+    font-size: 20px;
+    padding: 5px;
+    padding-right: 15px;
+}
+
+.pending {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 25px;
+}
+
+.pending i {
+    font-size: 20px;
+    padding: 5px;
+    padding-left: 15px;
+}
+
+.pending label {
+    font-size: 20px;
+    padding: 5px;
+    padding-right: 15px;
+}
+
+.completed {
+    position: relative;
+    left: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 25px;
+}
+
+.completed i {
+    font-size: 20px;
+    padding: 5px;
+    padding-left: 15px;
+}
+
+.completed label {
+    font-size: 20px;
+    padding: 5px;
+    padding-right: 15px;
+}
+
+.chartcontainer {
+    position: absolute;
+    top: 100px;
+    left: 800px;
+    background-color: rgba(89, 89, 89, 0.5);
+    width: 600px;
+    height: 311.6px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tablecontainer {
+    position: absolute;
+    top: 450px;
+    left: 190px;
+    font-size: 15px;
+    height: 250px;
+    overflow: auto;
+}
+
+.tablecontainer::-webkit-scrollbar {
+    display: none;
+}
+
+.tasktable {
+    border-collapse: separate;
+    border-spacing: 0;
+    display: block;
+}
+
+tr {
+    background-color: transparent;
+    padding: 10px;
+    display: block;
+    border-radius: 20px;
+}
+
+td {
+    background-color: rgba(89, 89, 89, 0.5);
+    padding-left: 20px;
+    text-align: left;
+    color: white;
+    font-family: sans-serif;
+}
+
+.taskcell {
+    width: 520px;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.datecell {
+    padding: 20px;
+    width: 200px;
+}
+
+.timecell {
+    padding: 20px;
+    width: 175px;
+}
+
+.statuscell {
+    width: 150px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+
+.completedcontainer {
+    background-color: rgb(0, 255, 47, 0.4);
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.completedcontainer:hover {
+    background-color: rgb(0, 255, 21, 0.5);
+}
+
+.notcompletedcontainer {
+    background-color: rgb(97, 0, 194);
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.notcompletedcontainer:hover {
+    background-color: rgb(112, 0, 224);
+}
+
+.inprogresscontainer {
+    background-color: rgba(255, 149, 0, 0.622);
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.inprogresscontainer:hover {
+    background-color: rgb(255, 149, 0, 0.8);
+}
+
+.screen-loader-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen-loader {
+    position: relative;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+  }
