@@ -25,7 +25,6 @@ function ForgotPasskeyPage() {
             }
         })
         .catch(error => {
-            console.log(error);
             setErr(error.message);
         });
     }

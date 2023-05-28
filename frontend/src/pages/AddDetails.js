@@ -36,7 +36,7 @@ function AddDetailsPage() {
             setUserObj(data);
         })
         .catch(error => {
-            console.log(error);
+            setError(error.message);
         });
     }, [navigate]);
 
@@ -80,7 +80,7 @@ function AddDetailsPage() {
             }
         })
         .catch(error => {
-            setError('Unknown Error')
+            setError(error.text)
         });
     }
 
@@ -102,7 +102,7 @@ function AddDetailsPage() {
             }
         })
         .catch(error => {
-            setError('Unknown Error')
+            setError(error.message);
         });
     }
 
@@ -132,87 +132,96 @@ function AddDetailsPage() {
         navigate({ pathname: '/login' });
     }
 
-    return (
-        <html lang="en">
-            <head>
-                <title>Add Task</title>
-                <link rel="stylesheet" href="addtask.css" />
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-            </head>
-            <body>
-                <div class="sidepane">
-                    <div class="homebtncontainer">
-                        <button class="adddetailshomebtn" onClick={ homeBtn }>
-                            <i class="fa-solid fa-house"></i>
-                        </button>
-                    </div>
-                    <div class="calendarbtncontainer">
-                        <button class="adddetailscalendarbtn" onClick={ calendarBtn }>
-                            <i class="fa-solid fa-calendar"></i>
-                        </button>
-                    </div>
-                    <div class="addbtncontainer">
-                        <button class="adddetailsaddbtn" onClick={ addTaskBtn }>
-                            <i class="fa-solid fa-calendar-plus"></i>
-                        </button>
-                    </div>
-                    <div class="starbtncontainer">
-                        <button class="adddetailsstarbtn" onClick={ starBtn }>
-                            <i class="fa-solid fa-star"></i>
-                        </button>
-                    </div>
-                    <div class="logoutbtncontainer">
-                        <button class="logoutbtn" onClick={ logoutBtn }>
-                            <i class="fa-solid fa-right-from-bracket"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="adddetailsmaincontainer">
-                    <form onSubmit={ handleFormSubmit }>
-                        <div class="adddetailsformcontainer">
-                            <div class="adddetailstitlecontainer">
-                                <span><i class="fa-solid fa-tag"></i></span>
-                                <input class="adddetailstitleinput" placeholder="Title" value={ title } onChange={(e) => setTitle(e.target.value)}/>
-                            </div>
-                            <div class="adddetailsdesccontainer">
-                                <span><i class="fa-solid fa-align-left"></i></span>
-                                <textarea class="adddetailsdescinput" placeholder="Description" value={ description } onChange={(e) => setDescription(e.target.value)}></textarea>
-                            </div>
-                            <div class="adddetailssubtaskcontainer">
-                                <table class="adddetailssubtasktable">
-                                    <tbody>
-                                        { Object.entries(subtasks).map(([key, value]) => {
-                                            return (
-                                            <tr key={ key } style={{ padding:'0px' }}>
-                                                <td class="adddetailssubtasklabelcell" ><ul><li><label class="adddetailssubtasklabel">{ key }</label></li></ul></td>
-                                                <td class="adddetailssubtaskdltcell"><button class="adddetailssubtaskdlt" onClick={() => dltSubtaskBtn(key) }><i class="fa-sharp fa-solid fa-circle-xmark"></i></button></td>
-                                        </tr>
-                                            )
-                                        }) }
-                                    </tbody>
-                                </table>
-                                    <div class="adddetailsfoot">
-                                        <td class="adddetailssubtaskinputcell"><input type="text" class="adddetailssubtaskinput" placeholder="Subtask" value={ subtask } onChange={(e) => setSubtask(e.target.value)}/></td>
-                                        <td class="adddetailssubtasksubmitcell"><button class="adddetailssubtasksubmit" onClick={ addSubtaskBtn }><i class="fa-solid fa-circle-check"></i></button></td>
-                                    </div>
-                            </div>
-                            <div class="adddetailsdatetimecontainer">
-                                <span><i class="fa-solid fa-clock"></i></span>
-                                <input type="datetime-local" class="adddetailsdatetimeinput" placeholder="" value={ timestamp } onChange={(e) => setTimestamp(e.target.value)}/>
-                            </div>
-                            <div class="adddetailsstarcontainer">
-                                <button class="adddetailsstarbutton" onClick={ starredBtn }><i class="fa-solid fa-star" style={{color: (starred == false)?"white":"yellow"}} onMouseEnter={(e) => {e.target.style.color = (starred == false)?"yellow":"white"}} onMouseLeave={(e) => {e.target.style.color = (starred == false)?"white":"yellow"}}></i></button>
-                            </div>
-                            { error && <div class="adddetailserrcontainer">{ error } !</div>}
-                            <div class="adddetailssubmitbtncontainer">
-                                <button class="adddetailssubmitbtn" onClick={ handleSubmit }><i class="fa-regular fa-calendar-plus"></i></button>
-                            </div>
+    if (userObj) {
+        return (
+            <html lang="en">
+                <head>
+                    <title>Add Task</title>
+                    <link rel="stylesheet" href="addtask.css" />
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+                </head>
+                <body>
+                    <div class="sidepane">
+                        <div class="homebtncontainer">
+                            <button class="adddetailshomebtn" onClick={ homeBtn }>
+                                <i class="fa-solid fa-house"></i>
+                            </button>
                         </div>
-                    </form>
-                </div>
-            </body>
-        </html>
-    )
+                        <div class="calendarbtncontainer">
+                            <button class="adddetailscalendarbtn" onClick={ calendarBtn }>
+                                <i class="fa-solid fa-calendar"></i>
+                            </button>
+                        </div>
+                        <div class="addbtncontainer">
+                            <button class="adddetailsaddbtn" onClick={ addTaskBtn }>
+                                <i class="fa-solid fa-calendar-plus"></i>
+                            </button>
+                        </div>
+                        <div class="starbtncontainer">
+                            <button class="adddetailsstarbtn" onClick={ starBtn }>
+                                <i class="fa-solid fa-star"></i>
+                            </button>
+                        </div>
+                        <div class="logoutbtncontainer">
+                            <button class="logoutbtn" onClick={ logoutBtn }>
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="adddetailsmaincontainer">
+                        <form onSubmit={ handleFormSubmit }>
+                            <div class="adddetailsformcontainer">
+                                <div class="adddetailstitlecontainer">
+                                    <span><i class="fa-solid fa-tag"></i></span>
+                                    <input class="adddetailstitleinput" placeholder="Title" value={ title } onChange={(e) => setTitle(e.target.value)}/>
+                                </div>
+                                <div class="adddetailsdesccontainer">
+                                    <span><i class="fa-solid fa-align-left"></i></span>
+                                    <textarea class="adddetailsdescinput" placeholder="Description" value={ description } onChange={(e) => setDescription(e.target.value)}></textarea>
+                                </div>
+                                <div class="adddetailssubtaskcontainer">
+                                    <table class="adddetailssubtasktable">
+                                        <tbody>
+                                            { Object.entries(subtasks).map(([key, value]) => {
+                                                return (
+                                                <tr key={ key } style={{ padding:'0px' }}>
+                                                    <td class="adddetailssubtasklabelcell" ><ul><li><label class="adddetailssubtasklabel">{ key }</label></li></ul></td>
+                                                    <td class="adddetailssubtaskdltcell"><button class="adddetailssubtaskdlt" onClick={() => dltSubtaskBtn(key) }><i class="fa-sharp fa-solid fa-circle-xmark"></i></button></td>
+                                            </tr>
+                                                )
+                                            }) }
+                                        </tbody>
+                                    </table>
+                                        <div class="adddetailsfoot">
+                                            <td class="adddetailssubtaskinputcell"><input type="text" class="adddetailssubtaskinput" placeholder="Subtask" value={ subtask } onChange={(e) => setSubtask(e.target.value)}/></td>
+                                            <td class="adddetailssubtasksubmitcell"><button class="adddetailssubtasksubmit" onClick={ addSubtaskBtn }><i class="fa-solid fa-circle-check"></i></button></td>
+                                        </div>
+                                </div>
+                                <div class="adddetailsdatetimecontainer">
+                                    <span><i class="fa-solid fa-clock"></i></span>
+                                    <input type="datetime-local" class="adddetailsdatetimeinput" placeholder="" value={ timestamp } onChange={(e) => setTimestamp(e.target.value)}/>
+                                </div>
+                                <div class="adddetailsstarcontainer">
+                                    <button class="adddetailsstarbutton" onClick={ starredBtn }><i class="fa-solid fa-star" style={{color: (starred == false)?"white":"yellow"}} onMouseEnter={(e) => {e.target.style.color = (starred == false)?"yellow":"white"}} onMouseLeave={(e) => {e.target.style.color = (starred == false)?"white":"yellow"}}></i></button>
+                                </div>
+                                { error && <div class="adddetailserrcontainer">{ error } !</div>}
+                                <div class="adddetailssubmitbtncontainer">
+                                    <button class="adddetailssubmitbtn" onClick={ handleSubmit }><i class="fa-regular fa-calendar-plus"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </body>
+            </html>
+        )
+    }
+    else {
+        return (
+            <div className="screen-loader-container">
+                <div className="screen-loader"></div>
+            </div>
+        )
+    }
 }
 
 export default AddDetailsPage;

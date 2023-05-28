@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import hostname from "./Host";
-import '../styles/ChangePasskey.css'
 
 function ChangePasskeyPage() {
     const [newPasskey, setNewPasskey] = useState(null);

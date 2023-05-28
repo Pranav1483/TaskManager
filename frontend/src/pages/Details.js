@@ -322,7 +322,9 @@ function DetailsPage() {
 }
 else {
     return (
-        <></>
+        <div className="screen-loader-container">
+                <div className="screen-loader"></div>
+        </div>
     )
 }
 }

@@ -220,7 +220,9 @@ function CalendarPage() {
     )}
     else {
         return (
-            <div style={{color: "white"}}>NULL</div>
+            <div className="screen-loader-container">
+                <div className="screen-loader"></div>
+            </div>
         )
     }
 }
