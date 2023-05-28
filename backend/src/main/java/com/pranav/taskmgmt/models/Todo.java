@@ -12,6 +12,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.Map;
 
 @Entity
@@ -53,6 +54,6 @@ public class Todo {
 
     @PrePersist
     private void prePersist() {
-        this.startTimestamp = LocalDateTime.now();
+        this.startTimestamp = LocalDateTime.now(ZoneId.of("Asia/Kolkata"));
     }
 }
