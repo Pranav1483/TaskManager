@@ -42,6 +42,10 @@ function ChangePasskeyPage() {
             console.log(error);
         });
     }
+    const LoginPageDirect = (event) => {
+        event.preventDefault();
+        navigate('/login');
+    }
 
     return (
         <html lang="en">
@@ -50,6 +54,9 @@ function ChangePasskeyPage() {
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
             </head>
             <body className="forgotpasskey-body">
+                <button className="back-btn" onClick={ LoginPageDirect }>
+                    <i class="fa-solid fa-left-long"></i>
+                </button>
                 <form onSubmit={ handleSubmit }>
                     <div className="fp-main-container">
                         <div className="fp-email-container">

@@ -37,6 +37,10 @@ function RegisterPage() {
             setError('Unknown Error');
         });
     }
+    const LoginPageDirect = (event) => {
+        event.preventDefault();
+        navigate('/login');
+    }
 
     return (
         <html lang="en">
@@ -45,6 +49,9 @@ function RegisterPage() {
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
             </head>
             <body className="register-body">
+                <button className="back-btn" onClick={ LoginPageDirect }>
+                    <i class="fa-solid fa-left-long"></i>
+                </button>
                 <form onSubmit={ handleSubmit }>
                     <div className="main-container">
                         <div className="fname-container">

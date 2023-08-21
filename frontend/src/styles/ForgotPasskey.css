@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .fp-main-container {
@@ -68,4 +69,21 @@
     font-weight: 600;
     color: red;
     word-wrap: break-word;
+}
+
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+}
+
+.back-btn:hover {
+   color: grey;
 }

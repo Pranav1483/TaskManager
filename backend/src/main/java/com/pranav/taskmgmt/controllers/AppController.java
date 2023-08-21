@@ -170,9 +170,11 @@ public class AppController {
         String recieved_email = details.get("email");
         User check_user = userService.getUserbyEmail(recieved_email);
         if (check_user == null) {
+            System.out.println(recieved_email);
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Not Registered");
         }
         else {
+            System.out.println("YES");
             Random random = new Random();
             String otp = String.valueOf(random.nextInt(900000) + 100000);
             String status = emailService.sendEmail(recieved_email, otp);
