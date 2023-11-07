@@ -174,7 +174,6 @@ public class AppController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Not Registered");
         }
         else {
-            System.out.println("YES");
             Random random = new Random();
             String otp = String.valueOf(random.nextInt(900000) + 100000);
             String status = emailService.sendEmail(recieved_email, otp);

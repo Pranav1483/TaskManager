@@ -1,0 +1,16 @@
+com\pranav\taskmgmt\config\MailConfig.class
+com\pranav\taskmgmt\services\TodoService.class
+com\pranav\taskmgmt\controllers\AppController.class
+com\pranav\taskmgmt\services\UserServiceImpl.class
+com\pranav\taskmgmt\services\EmailServiceImpl$1.class
+com\pranav\taskmgmt\models\Todo$TodoBuilder.class
+com\pranav\taskmgmt\models\Todo.class
+com\pranav\taskmgmt\TaskmgmtApplication.class
+com\pranav\taskmgmt\services\EmailServiceImpl.class
+com\pranav\taskmgmt\repositories\UserRepository.class
+com\pranav\taskmgmt\services\UserService.class
+com\pranav\taskmgmt\models\User$UserBuilder.class
+com\pranav\taskmgmt\models\User.class
+com\pranav\taskmgmt\repositories\TodoRepository.class
+com\pranav\taskmgmt\services\EmailService.class
+com\pranav\taskmgmt\services\TodoServiceImpl.class
