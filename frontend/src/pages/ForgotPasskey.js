@@ -21,7 +21,6 @@ function ForgotPasskeyPage() {
                 navigate('/otp', {state: {recieved_otp: message, email: email}});
             })}
             else {
-                console.log(response.text());
                 response.text().then((message) => { setErr(message) });
             }
         })

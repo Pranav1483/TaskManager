@@ -148,9 +148,6 @@ public class AppController {
             Todo test_todo = test_todos.get(0);
             LocalDateTime s = test_todo.getStartTimestamp();
             LocalDateTime e = test_todo.getEndTimestamp();
-            System.out.println(s);
-            System.out.println(e);
-            System.out.println(Duration.between(s, e));
             Map<String, String> test_subtask = test_todo.getSubtasks();
             test_subtask.put("Day 1: Spring Boot", "0");
             test_todo.setSubtasks(test_subtask);
